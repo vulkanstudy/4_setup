@@ -45,6 +45,7 @@ public:
 		finalizeWindow();
 	}
 
+private:
 	// 表示ウィンドウの設定
 	void initializeWindow()
 	{
@@ -89,7 +90,6 @@ public:
 		vkDestroyInstance(instance_, nullptr);
 	}
 
-private:
 	static void createInstance(VkInstance *dest)
 	{
 		// アプケーション情報を定めるための構造体
