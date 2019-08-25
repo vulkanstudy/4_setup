@@ -61,7 +61,6 @@ private:
 	void finalizeWindow()
 	{
 		glfwDestroyWindow(window_);
-
 		glfwTerminate();
 	}
 
