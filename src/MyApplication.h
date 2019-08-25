@@ -52,8 +52,8 @@ private:
 
 		glfwInit();
 
-		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);// OpenGL の種類の設定
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);// ユーザーはウィンドウサイズを変更できない
 
 		window_ = glfwCreateWindow(WIDTH, HEIGHT, APP_NAME, nullptr, nullptr);
 	}
@@ -83,7 +83,6 @@ private:
 	void finalizeVulkan()
 	{
 		finalizeDebugMessenger(instance_, debugMessenger_);
-
 		vkDestroyInstance(instance_, nullptr);
 	}
 
