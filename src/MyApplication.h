@@ -23,7 +23,6 @@ private:
 
 	GLFWwindow* window_;
 	VkInstance instance_;
-	const static std::vector<char*> validationLayers;
 	VkDebugUtilsMessengerEXT debugMessenger_;// デバッグメッセージを伝えるオブジェクト
 
 public:
