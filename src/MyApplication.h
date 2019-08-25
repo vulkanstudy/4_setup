@@ -21,10 +21,9 @@ class MyApplication
 private:
 	constexpr static char APP_NAME[] = "Vulkan Application";
 
-	const static std::vector<char*> validationLayers;
-
 	GLFWwindow* window_;
 	VkInstance instance_;
+	const static std::vector<char*> validationLayers;
 	VkDebugUtilsMessengerEXT debugMessenger_;// デバッグメッセージを伝えるオブジェクト
 
 public:
