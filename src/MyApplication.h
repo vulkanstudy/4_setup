@@ -184,9 +184,9 @@ private:
 	{
 		if (!enableValidationLayers) return;
 
-		VkDebugUtilsMessengerCreateInfoEXT createInfo = populateDebugMessengerCreateInfo();
+		VkDebugUtilsMessengerCreateInfoEXT createInfo = populateDebugMessengerCreateInfo();// 生成情報の構築
 
-		if (CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &debugMessenger) != VK_SUCCESS) {
+		if (CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &debugMessenger) != VK_SUCCESS) {// 生成
 			throw std::runtime_error("failed to set up debug messenger!");
 		}
 	}
